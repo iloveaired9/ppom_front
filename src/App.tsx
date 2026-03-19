@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import PpompuNew from '@/components/PpompuNew';
+import NaverStyleGuide from '@/components/NaverStyleGuide';
 import './App.css';
 
-type DemoType = 'new' | 'components';
+type DemoType = 'new' | 'components' | 'guide';
 
 function App() {
   const [currentDemo, setCurrentDemo] = useState<DemoType>('new');
@@ -12,9 +13,21 @@ function App() {
     return (
       <div className="app ppomppu-app">
         <div className="demo-switcher">
+          <button onClick={() => setCurrentDemo('guide')}>📋 스타일 가이드</button>
           <button onClick={() => setCurrentDemo('components')}>← 컴포넌트</button>
         </div>
         <PpompuNew />
+      </div>
+    );
+  }
+
+  if (currentDemo === 'guide') {
+    return (
+      <div className="app">
+        <div className="demo-switcher">
+          <button onClick={() => setCurrentDemo('new')}>뽐뿌 NEW 페이지 →</button>
+        </div>
+        <NaverStyleGuide />
       </div>
     );
   }
@@ -126,6 +139,7 @@ function App() {
         </section>
       </main>
       <div className="demo-switcher">
+        <button onClick={() => setCurrentDemo('guide')}>📋 스타일 가이드</button>
         <button onClick={() => setCurrentDemo('new')}>뽐뿌 NEW 페이지 →</button>
       </div>
     </div>
