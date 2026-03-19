@@ -15,7 +15,15 @@
       "Bash(node scripts/fetch-ppomppu.js)",
       "Bash(find . -name *ppomppu*.html -o -name m-ppomppu*.html)",
       "Bash(mkdir -p docs)",
-      "Bash(mv IMPLEMENTATION_DETAILS.md CHANGELOG.md TROUBLESHOOTING.md docs/)"
+      "Bash(mv IMPLEMENTATION_DETAILS.md CHANGELOG.md TROUBLESHOOTING.md docs/)",
+      "Bash(ls -lh *.md)",
+      "Bash(for file:*)",
+      "Bash(do echo:*)",
+      "Read(//c/rnd/claude/mcp/ppom_front/**)",
+      "Bash(done)",
+      "Bash(mv DARKMODE_COMPARISON.md docs/REFERENCE_DARKMODE_COMPARISON.md)",
+      "Bash(mv PPOMPPU_DARKMODE_ANALYSIS.md docs/REFERENCE_ANALYSIS.md)",
+      "Bash(ls -lh docs/REFERENCE*)"
     ]
   }
 }
