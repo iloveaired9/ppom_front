@@ -283,6 +283,14 @@ localStorage.setItem('theme-mode', 'dark');  // 'light' | 'dark' | 제거됨(aut
 - Safari: ✅ 지원
 - IE11: ❌ 미지원
 
+## 📚 추가 문서
+
+자세한 정보는 다음 문서들을 참고하세요:
+
+- **[구현 상세 설명](./docs/IMPLEMENTATION_DETAILS.md)** - 코드 구조, 상태 흐름, 기술 분석
+- **[변경 로그](./docs/CHANGELOG.md)** - 버전 히스토리, 추가/수정사항
+- **[문제 해결 가이드](./docs/TROUBLESHOOTING.md)** - 일반적인 문제와 해결책
+
 ## 📝 라이선스
 
 MIT License

@@ -13,7 +13,9 @@
       "Bash(curl -s http://localhost:5173 --max-time 2)",
       "Bash(npm list:*)",
       "Bash(node scripts/fetch-ppomppu.js)",
-      "Bash(find . -name *ppomppu*.html -o -name m-ppomppu*.html)"
+      "Bash(find . -name *ppomppu*.html -o -name m-ppomppu*.html)",
+      "Bash(mkdir -p docs)",
+      "Bash(mv IMPLEMENTATION_DETAILS.md CHANGELOG.md TROUBLESHOOTING.md docs/)"
     ]
   }
 }
