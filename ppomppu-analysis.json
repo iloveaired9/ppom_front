@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-03-19T12:05:47.570Z",
+  "url": "m.ppomppu.co.kr",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "lightMode": {
+    "colors": {
+      "body": {
+        "background": "rgba(0, 0, 0, 0)",
+        "text": "rgb(51, 51, 51)"
+      },
+      "header": "rgb(255, 255, 255)",
+      "section": "rgba(0, 0, 0, 0)",
+      "link": "rgb(0, 0, 0)",
+      "button": "rgba(0, 0, 0, 0)"
+    },
+    "htmlClass": null,
+    "htmlDataTheme": null
+  },
+  "darkModeSupport": {
+    "cssVariablesCount": 20,
+    "hasDarkClass": true,
+    "hasDataTheme": true
+  },
+  "htmlStructure": {
+    "lang": "ko",
+    "classes": "dark-mode dark",
+    "dataAttributes": [
+      "data-theme=\"dark\""
+    ],
+    "head": {},
+    "styleSheets": 5
+  }
+}

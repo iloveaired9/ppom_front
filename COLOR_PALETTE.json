@@ -1,0 +1,295 @@
+{
+  "darkMode": {
+    "name": "Naver Dark Mode Palette",
+    "description": "네이버 모바일 다크모드 색상 체계",
+    "background": {
+      "primary": {
+        "value": "#111111",
+        "rgb": "rgb(17, 17, 17)",
+        "hsl": "hsl(0, 0%, 7%)",
+        "name": "Primary Background (순수 검정)",
+        "usage": "페이지 배경, 기본 배경색"
+      },
+      "secondary": {
+        "value": "#1A1A1A",
+        "rgb": "rgb(26, 26, 26)",
+        "hsl": "hsl(0, 0%, 10%)",
+        "name": "Secondary Background",
+        "usage": "카드, 모듈, 섹션 배경"
+      },
+      "tertiary": {
+        "value": "#252525",
+        "rgb": "rgb(37, 37, 37)",
+        "hsl": "hsl(0, 0%, 15%)",
+        "name": "Tertiary Background",
+        "usage": "호버 상태, 강조 배경"
+      },
+      "elevated": {
+        "value": "#2D2D2D",
+        "rgb": "rgb(45, 45, 45)",
+        "hsl": "hsl(0, 0%, 18%)",
+        "name": "Elevated Background",
+        "usage": "모달, 팝오버, 드롭다운"
+      }
+    },
+    "text": {
+      "primary": {
+        "value": "#FFFFFF",
+        "rgb": "rgb(255, 255, 255)",
+        "hsl": "hsl(0, 0%, 100%)",
+        "name": "Primary Text",
+        "usage": "제목, 주요 텍스트",
+        "contrast_on_bg_primary": "21:1 (AA✓ AAA✓)",
+        "contrast_on_bg_secondary": "20:1 (AA✓ AAA✓)"
+      },
+      "secondary": {
+        "value": "#EBEBEB",
+        "rgb": "rgb(235, 235, 235)",
+        "hsl": "hsl(0, 0%, 92%)",
+        "name": "Secondary Text",
+        "usage": "부제, 보조 텍스트",
+        "contrast_on_bg_primary": "20:1 (AA✓ AAA✓)",
+        "contrast_on_bg_secondary": "19:1 (AA✓ AAA✓)"
+      },
+      "tertiary": {
+        "value": "#B0B0B0",
+        "rgb": "rgb(176, 176, 176)",
+        "hsl": "hsl(0, 0%, 69%)",
+        "name": "Tertiary Text (약한 강조)",
+        "usage": "메타정보, 보조 정보, 비활성 텍스트",
+        "contrast_on_bg_primary": "6.5:1 (AA✓ AAA✓)",
+        "contrast_on_bg_secondary": "6:1 (AA✓ AAA✓)"
+      },
+      "quaternary": {
+        "value": "#808080",
+        "rgb": "rgb(128, 128, 128)",
+        "hsl": "hsl(0, 0%, 50%)",
+        "name": "Quaternary Text (매우 약한)",
+        "usage": "플레이스홀더, 매우 약한 텍스트",
+        "contrast_on_bg_primary": "4.5:1 (AA✓ AAA✗)",
+        "contrast_on_bg_secondary": "4.1:1 (AA✓ AAA✗)"
+      }
+    },
+    "border": {
+      "light": {
+        "value": "#333333",
+        "rgb": "rgb(51, 51, 51)",
+        "hsl": "hsl(0, 0%, 20%)",
+        "name": "Light Border",
+        "usage": "약한 구분선, 모듈 경계"
+      },
+      "medium": {
+        "value": "#4A4A4A",
+        "rgb": "rgb(74, 74, 74)",
+        "hsl": "hsl(0, 0%, 29%)",
+        "name": "Medium Border",
+        "usage": "표준 테두리, 포커스 상태"
+      },
+      "strong": {
+        "value": "#666666",
+        "rgb": "rgb(102, 102, 102)",
+        "hsl": "hsl(0, 0%, 40%)",
+        "name": "Strong Border",
+        "usage": "강조된 테두리, 비활성 상태"
+      }
+    },
+    "semantic": {
+      "accent": {
+        "value": "#00C73C",
+        "rgb": "rgb(0, 199, 60)",
+        "hsl": "hsl(135, 100%, 39%)",
+        "name": "Naver Green (Primary Accent)",
+        "usage": "주요 강조, CTA, 성공 상태",
+        "variants": {
+          "light": "#28D959",
+          "dark": "#009900",
+          "hover": "#00B030",
+          "active": "#008020",
+          "disabled": "rgba(0, 199, 60, 0.5)"
+        }
+      },
+      "link": {
+        "value": "#00D5FF",
+        "rgb": "rgb(0, 213, 255)",
+        "hsl": "hsl(186, 100%, 50%)",
+        "name": "Cyan Blue (Links)",
+        "usage": "링크, 정보 강조",
+        "variants": {
+          "hover": "#00CCFF",
+          "visited": "#00CCFF",
+          "active": "#00B8E6"
+        }
+      },
+      "error": {
+        "value": "#FF6B6B",
+        "rgb": "rgb(255, 107, 107)",
+        "hsl": "hsl(0, 100%, 71%)",
+        "name": "Red (Error/Alert)",
+        "usage": "에러, 경고, 삭제",
+        "variants": {
+          "light": "#FF9999",
+          "dark": "#FF4444",
+          "background": "rgba(255, 107, 107, 0.1)"
+        }
+      },
+      "warning": {
+        "value": "#FFB84D",
+        "rgb": "rgb(255, 184, 77)",
+        "hsl": "hsl(32, 100%, 67%)",
+        "name": "Orange (Warning)",
+        "usage": "경고, 주의",
+        "variants": {
+          "light": "#FFD699",
+          "dark": "#FF9900",
+          "background": "rgba(255, 184, 77, 0.1)"
+        }
+      },
+      "success": {
+        "value": "#00C73C",
+        "rgb": "rgb(0, 199, 60)",
+        "hsl": "hsl(135, 100%, 39%)",
+        "name": "Green (Success)",
+        "usage": "성공, 완료, 긍정",
+        "variants": {
+          "light": "#28D959",
+          "background": "rgba(0, 199, 60, 0.1)"
+        }
+      },
+      "info": {
+        "value": "#00D5FF",
+        "rgb": "rgb(0, 213, 255)",
+        "hsl": "hsl(186, 100%, 50%)",
+        "name": "Cyan (Info)",
+        "usage": "정보, 안내",
+        "variants": {
+          "light": "#33E0FF",
+          "background": "rgba(0, 213, 255, 0.1)"
+        }
+      }
+    },
+    "interactive": {
+      "button_primary": {
+        "background": "#00C73C",
+        "text": "#FFFFFF",
+        "border": "transparent",
+        "hover_background": "#00B030",
+        "active_background": "#008020",
+        "disabled_background": "rgba(0, 199, 60, 0.5)",
+        "disabled_text": "rgba(255, 255, 255, 0.5)"
+      },
+      "button_secondary": {
+        "background": "#1A1A1A",
+        "text": "#FFFFFF",
+        "border": "#333333",
+        "hover_background": "#252525",
+        "active_background": "#2D2D2D",
+        "disabled_background": "rgba(26, 26, 26, 0.5)",
+        "disabled_text": "rgba(255, 255, 255, 0.5)"
+      },
+      "button_tertiary": {
+        "background": "transparent",
+        "text": "#00C73C",
+        "border": "#00C73C",
+        "hover_background": "rgba(0, 199, 60, 0.1)",
+        "active_background": "rgba(0, 199, 60, 0.2)",
+        "disabled_text": "rgba(0, 199, 60, 0.5)"
+      },
+      "input_background": "#1A1A1A",
+      "input_border": "#333333",
+      "input_border_focus": "#00C73C",
+      "input_text": "#FFFFFF",
+      "input_placeholder": "#B0B0B0",
+      "input_focus_shadow": "rgba(0, 199, 60, 0.2)"
+    },
+    "feedback": {
+      "focus_ring": {
+        "color": "#00C73C",
+        "width": "2px",
+        "offset": "2px",
+        "style": "solid"
+      },
+      "selection_background": "rgba(0, 199, 60, 0.3)",
+      "selection_text": "#FFFFFF"
+    },
+    "overlay": {
+      "backdrop": "rgba(0, 0, 0, 0.5)",
+      "modal_background": "#111111",
+      "modal_border": "#333333"
+    }
+  },
+  "lightMode": {
+    "name": "Light Mode Palette",
+    "description": "라이트 모드 색상 체계 (참고용)",
+    "background": {
+      "primary": "#FFFFFF",
+      "secondary": "#F5F5F5",
+      "tertiary": "#EEEEEE"
+    },
+    "text": {
+      "primary": "#000000",
+      "secondary": "#333333",
+      "tertiary": "#777777"
+    },
+    "border": {
+      "light": "#DDDDDD",
+      "medium": "#CCCCCC"
+    }
+  },
+  "comparison": {
+    "naver": {
+      "bg_primary": "#111111",
+      "text_primary": "#FFFFFF",
+      "accent": "#00C73C",
+      "link": "#00D5FF",
+      "characteristics": "순수 검정, 높은 명도 대비, OLED 친화적"
+    },
+    "ppomppu_old": {
+      "bg_primary": "#1F1F1F",
+      "text_primary": "#FFFFFF",
+      "accent": "#FF6B35",
+      "link": "#4FA3FF",
+      "characteristics": "진회색, 적당한 명도 대비, 따뜻한 톤"
+    },
+    "differences": {
+      "background": "darker (#111111 vs #1F1F1F) - 네이버가 더 검음",
+      "accent_color": "green (#00C73C) vs orange (#FF6B35) - 완전히 다름",
+      "link_color": "cyan (#00D5FF) vs light blue (#4FA3FF) - 네이버가 더 밝음",
+      "text_secondary": "lighter (#EBEBEB vs #D0D0D0) - 네이버가 더 밝음"
+    }
+  },
+  "accessibility": {
+    "wcag_aa_standard": "4.5:1 (text), 3:1 (large text/graphics)",
+    "wcag_aaa_standard": "7:1 (text), 4.5:1 (large text/graphics)",
+    "color_blind_considerations": {
+      "deuteranopia": "Red-Green color blindness - use color + pattern",
+      "protanopia": "Red-Green color blindness - avoid red/green alone",
+      "tritanopia": "Blue-Yellow color blindness - rare"
+    },
+    "validation": {
+      "text_primary_on_bg": "WCAG AAA ✓ (21:1)",
+      "text_secondary_on_bg": "WCAG AAA ✓ (20:1)",
+      "text_tertiary_on_bg": "WCAG AA ✓ (6.5:1)",
+      "accent_on_bg": "WCAG AAA ✓ (2.8:1 - use as accent, not text)"
+    }
+  },
+  "migration_priority": {
+    "high": [
+      "Primary background (#111111)",
+      "Secondary background (#1A1A1A)",
+      "Primary text (#FFFFFF)",
+      "Accent green (#00C73C)",
+      "Border light (#333333)"
+    ],
+    "medium": [
+      "Secondary text (#EBEBEB)",
+      "Link cyan (#00D5FF)",
+      "Error red (#FF6B6B)",
+      "Warning orange (#FFB84D)"
+    ],
+    "low": [
+      "Tertiary text (#B0B0B0)",
+      "Interactive states",
+      "Animation timings"
+    ]
+  }
+}

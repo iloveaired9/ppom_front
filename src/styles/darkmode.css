@@ -1,0 +1,406 @@
+/* ============================================
+   네이버 다크모드 색상 시스템
+   ============================================ */
+
+/* Default (Light Mode) */
+:root {
+  --nv-bg-primary: #FFFFFF;
+  --nv-bg-secondary: #F5F5F5;
+  --nv-bg-tertiary: #EEEEEE;
+
+  --nv-text-primary: #000000;
+  --nv-text-secondary: #333333;
+  --nv-text-tertiary: #777777;
+
+  --nv-border: #DDDDDD;
+  --nv-divider: #EEEEEE;
+
+  --nv-accent: #00C73C;
+  --nv-link: #0066CC;
+  --nv-link-visited: #4169E1;
+
+  --nv-error: #FF5555;
+  --nv-warning: #FFAA00;
+  --nv-success: #00C73C;
+  --nv-info: #00D5FF;
+
+  --nv-font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+  --nv-font-size-base: 14px;
+  --nv-line-height-base: 1.5;
+
+  --nv-spacing-xs: 4px;
+  --nv-spacing-sm: 8px;
+  --nv-spacing-md: 16px;
+  --nv-spacing-lg: 24px;
+  --nv-spacing-xl: 32px;
+
+  --nv-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode (네이버 스타일) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --nv-bg-primary: #111111;
+    --nv-bg-secondary: #1A1A1A;
+    --nv-bg-tertiary: #252525;
+
+    --nv-text-primary: #FFFFFF;
+    --nv-text-secondary: #EBEBEB;
+    --nv-text-tertiary: #B0B0B0;
+
+    --nv-border: #333333;
+    --nv-divider: #333333;
+
+    --nv-accent: #00C73C;
+    --nv-link: #00D5FF;
+    --nv-link-visited: #00CCFF;
+
+    --nv-error: #FF6B6B;
+    --nv-warning: #FFB84D;
+    --nv-success: #00C73C;
+    --nv-info: #00D5FF;
+  }
+}
+
+/* 명시적 다크모드 클래스 (기존 호환성) */
+html.dark-mode {
+  --nv-bg-primary: #111111;
+  --nv-bg-secondary: #1A1A1A;
+  --nv-bg-tertiary: #252525;
+
+  --nv-text-primary: #FFFFFF;
+  --nv-text-secondary: #EBEBEB;
+  --nv-text-tertiary: #B0B0B0;
+
+  --nv-border: #333333;
+  --nv-divider: #333333;
+
+  --nv-accent: #00C73C;
+  --nv-link: #00D5FF;
+  --nv-link-visited: #00CCFF;
+
+  --nv-error: #FF6B6B;
+  --nv-warning: #FFB84D;
+  --nv-success: #00C73C;
+  --nv-info: #00D5FF;
+}
+
+/* ============================================
+   기본 요소 스타일
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--nv-font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--nv-bg-primary);
+  color: var(--nv-text-primary);
+  font-family: var(--nv-font-primary);
+  font-size: var(--nv-font-size-base);
+  line-height: var(--nv-line-height-base);
+  transition: background-color var(--nv-transition),
+              color var(--nv-transition);
+}
+
+a {
+  color: var(--nv-link);
+  text-decoration: none;
+  transition: color var(--nv-transition);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--nv-link-visited);
+}
+
+button {
+  background-color: var(--nv-bg-secondary);
+  color: var(--nv-text-primary);
+  border: 1px solid var(--nv-border);
+  padding: var(--nv-spacing-sm) var(--nv-spacing-md);
+  border-radius: 4px;
+  font-family: var(--nv-font-primary);
+  font-size: var(--nv-font-size-base);
+  transition: all var(--nv-transition);
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background-color: var(--nv-bg-tertiary);
+}
+
+button:active:not(:disabled) {
+  background-color: var(--nv-divider);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input, textarea, select {
+  background-color: var(--nv-bg-secondary);
+  color: var(--nv-text-primary);
+  border: 1px solid var(--nv-border);
+  padding: var(--nv-spacing-sm);
+  border-radius: 4px;
+  transition: border-color var(--nv-transition);
+  font-family: var(--nv-font-primary);
+  font-size: var(--nv-font-size-base);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--nv-accent);
+  box-shadow: 0 0 0 2px rgba(0, 199, 60, 0.2);
+}
+
+input::placeholder {
+  color: var(--nv-text-tertiary);
+}
+
+/* ============================================
+   공통 컴포넌트 클래스
+   ============================================ */
+
+.card,
+.module,
+.panel {
+  background-color: var(--nv-bg-secondary);
+  border: 1px solid var(--nv-divider);
+  border-radius: 8px;
+  padding: var(--nv-spacing-md);
+  transition: all var(--nv-transition);
+}
+
+.card:hover {
+  background-color: var(--nv-bg-tertiary);
+}
+
+.divider,
+hr {
+  background-color: var(--nv-divider);
+  border: none;
+  height: 1px;
+  margin: var(--nv-spacing-md) 0;
+}
+
+.badge,
+.tag {
+  background-color: var(--nv-bg-tertiary);
+  color: var(--nv-text-secondary);
+  padding: var(--nv-spacing-xs) var(--nv-spacing-sm);
+  border-radius: 4px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.badge.accent {
+  background-color: rgba(0, 199, 60, 0.15);
+  color: var(--nv-accent);
+}
+
+.alert {
+  padding: var(--nv-spacing-md);
+  border-radius: 4px;
+  border-left: 4px solid;
+  margin-bottom: var(--nv-spacing-md);
+}
+
+.alert.error {
+  background-color: rgba(255, 85, 85, 0.1);
+  border-left-color: var(--nv-error);
+  color: var(--nv-error);
+}
+
+.alert.warning {
+  background-color: rgba(255, 170, 0, 0.1);
+  border-left-color: var(--nv-warning);
+  color: var(--nv-warning);
+}
+
+.alert.success {
+  background-color: rgba(0, 199, 60, 0.1);
+  border-left-color: var(--nv-success);
+  color: var(--nv-success);
+}
+
+.alert.info {
+  background-color: rgba(0, 213, 255, 0.1);
+  border-left-color: var(--nv-info);
+  color: var(--nv-info);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--nv-bg-secondary);
+  color: var(--nv-text-primary);
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--nv-divider);
+}
+
+tbody tr:hover {
+  background-color: var(--nv-bg-secondary);
+}
+
+td, th {
+  padding: var(--nv-spacing-sm) var(--nv-spacing-md);
+  text-align: left;
+}
+
+.modal,
+.dialog,
+.popover {
+  background-color: var(--nv-bg-primary);
+  color: var(--nv-text-primary);
+  border: 1px solid var(--nv-divider);
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.spinner {
+  border-color: var(--nv-divider);
+  border-top-color: var(--nv-accent);
+}
+
+:disabled,
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ============================================
+   텍스트 유틸리티
+   ============================================ */
+
+.text-primary {
+  color: var(--nv-text-primary);
+}
+
+.text-secondary {
+  color: var(--nv-text-secondary);
+}
+
+.text-tertiary {
+  color: var(--nv-text-tertiary);
+}
+
+.text-accent {
+  color: var(--nv-accent);
+}
+
+.text-error {
+  color: var(--nv-error);
+}
+
+.text-warning {
+  color: var(--nv-warning);
+}
+
+.text-success {
+  color: var(--nv-success);
+}
+
+.text-info {
+  color: var(--nv-info);
+}
+
+/* ============================================
+   배경색 유틸리티
+   ============================================ */
+
+.bg-primary {
+  background-color: var(--nv-bg-primary);
+}
+
+.bg-secondary {
+  background-color: var(--nv-bg-secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--nv-bg-tertiary);
+}
+
+/* ============================================
+   포커스 상태 (접근성)
+   ============================================ */
+
+:focus-visible {
+  outline: 2px solid var(--nv-accent);
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--nv-accent);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   Print 스타일
+   ============================================ */
+
+@media print {
+  body {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  :root {
+    --nv-bg-primary: #FFFFFF;
+    --nv-text-primary: #000000;
+  }
+}
+
+/* ============================================
+   고대비 모드 (High Contrast)
+   ============================================ */
+
+@media (prefers-contrast: more) {
+  :root {
+    --nv-border: #444444;
+    --nv-divider: #555555;
+  }
+
+  html.dark-mode {
+    --nv-border: #666666;
+    --nv-divider: #777777;
+  }
+}
+
+/* ============================================
+   모션 감소 설정 (Reduce Motion)
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

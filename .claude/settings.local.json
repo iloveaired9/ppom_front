@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find C:rndclaudemcpppom_front -type f -name *.json -o -name *.css -o -name *.scss -o -name *.tsx -o -name *.ts)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(curl -s http://localhost:5173)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx ts-node:*)",
+      "Bash(npx playwright:*)",
+      "Bash(ls -lh ppomppu-*.*)",
+      "Bash(ls -lh ppomppu-*)",
+      "Bash(curl -s http://localhost:5173 --max-time 2)",
+      "Bash(npm list:*)",
+      "Bash(node scripts/fetch-ppomppu.js)",
+      "Bash(find . -name *ppomppu*.html -o -name m-ppomppu*.html)"
+    ]
+  }
+}

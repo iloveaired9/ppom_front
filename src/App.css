@@ -1,0 +1,256 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--nv-bg-primary);
+  color: var(--nv-text-primary);
+  transition: background-color var(--nv-transition), color var(--nv-transition);
+}
+
+.main {
+  flex: 1;
+  padding: var(--nv-spacing-lg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-size: 32px;
+  margin-bottom: var(--nv-spacing-md);
+  color: var(--nv-accent);
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--nv-spacing-lg);
+  margin: var(--nv-spacing-xl) 0;
+}
+
+.demo-card {
+  padding: var(--nv-spacing-md);
+}
+
+.demo-card h3 {
+  margin-top: 0;
+  color: var(--nv-text-primary);
+  font-size: 18px;
+}
+
+.demo-card p {
+  margin: var(--nv-spacing-sm) 0;
+  font-size: 14px;
+}
+
+.button-group {
+  display: flex;
+  gap: var(--nv-spacing-md);
+  flex-wrap: wrap;
+  margin-top: var(--nv-spacing-md);
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--nv-transition);
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: var(--nv-accent);
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: #00B030;
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: var(--nv-bg-tertiary);
+  color: var(--nv-text-primary);
+  border: 1px solid var(--nv-border);
+}
+
+.btn-secondary:hover {
+  background-color: var(--nv-divider);
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: var(--nv-spacing-sm) 0;
+  background-color: var(--nv-bg-primary);
+  color: var(--nv-text-primary);
+  border: 1px solid var(--nv-border);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--nv-accent);
+  box-shadow: 0 0 0 2px rgba(0, 199, 60, 0.2);
+}
+
+.form-input::placeholder {
+  color: var(--nv-text-tertiary);
+}
+
+.color-palette {
+  margin: var(--nv-spacing-xl) 0;
+  padding: var(--nv-spacing-lg);
+  background-color: var(--nv-bg-secondary);
+  border-radius: 8px;
+}
+
+.color-palette h3 {
+  margin-top: 0;
+  color: var(--nv-text-primary);
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: var(--nv-spacing-md);
+  margin-top: var(--nv-spacing-md);
+}
+
+.color-box {
+  text-align: center;
+}
+
+.color-swatch {
+  width: 100%;
+  height: 100px;
+  border-radius: 6px;
+  border: 1px solid var(--nv-divider);
+  margin-bottom: var(--nv-spacing-sm);
+}
+
+.color-box p {
+  font-size: 12px;
+  color: var(--nv-text-secondary);
+  word-break: break-all;
+}
+
+.migration-status {
+  margin: var(--nv-spacing-xl) 0;
+  padding: var(--nv-spacing-lg);
+  background-color: rgba(0, 199, 60, 0.1);
+  border-left: 4px solid var(--nv-accent);
+  border-radius: 6px;
+}
+
+.migration-status h3 {
+  margin-top: 0;
+  color: var(--nv-accent);
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  padding: var(--nv-spacing-sm) 0;
+  color: var(--nv-text-primary);
+  font-size: 14px;
+}
+
+.checklist li:before {
+  content: '';
+  margin-right: var(--nv-spacing-sm);
+}
+
+/* ============================================
+   데모 전환 버튼
+   ============================================ */
+
+.demo-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 50;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 300px;
+  pointer-events: none;
+}
+
+.demo-switcher button {
+  pointer-events: auto;
+}
+
+.demo-switcher button {
+  padding: 8px 12px;
+  background-color: var(--nv-accent);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--nv-transition);
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0, 199, 60, 0.2);
+}
+
+.demo-switcher button:hover {
+  background-color: #00B030;
+  box-shadow: 0 4px 12px rgba(0, 199, 60, 0.3);
+  transform: translateY(-2px);
+}
+
+.demo-switcher button:active {
+  transform: translateY(0);
+}
+
+/* ============================================
+   뽐뿌 앱 스타일
+   ============================================ */
+
+.ppomppu-app {
+  padding: 0;
+  background-color: var(--nv-bg-primary);
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: var(--nv-spacing-md);
+  }
+
+  .container h2 {
+    font-size: 24px;
+  }
+
+  .demo-grid {
+    grid-template-columns: 1fr;
+    gap: var(--nv-spacing-md);
+  }
+
+  .button-group {
+    gap: var(--nv-spacing-sm);
+  }
+
+  .btn {
+    flex: 1;
+  }
+
+  .colors {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+
+  .color-swatch {
+    height: 80px;
+  }
+}
