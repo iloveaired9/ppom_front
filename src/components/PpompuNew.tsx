@@ -171,7 +171,7 @@ export const PpompuNew: React.FC = () => {
           {posts.map((post) => (
             <li key={post.id} className="post-item">
               <a href="#" className="post-link">
-                <p className="post-title">{post.title}</p>
+                <span className="post-title">{post.title}</span>
                 <span className="post-category">[{post.category}]</span>
                 <span className="post-stat-icon">
                   <img src="//cdn2.ppomppu.co.kr/images/new_main/icon_coment.png" alt="댓글" />
