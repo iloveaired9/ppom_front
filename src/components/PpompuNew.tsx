@@ -167,29 +167,25 @@ export const PpompuNew: React.FC = () => {
 
       {/* 포스트 목록 */}
       <main className="posts-container">
-        {posts.map((post) => (
-          <article key={post.id} className="post-item">
-            <div className="post-left">
-              <h3 className="post-title">{post.title}</h3>
-              <div className="post-meta">
+        <ul className="posts-list">
+          {posts.map((post) => (
+            <li key={post.id} className="post-item">
+              <a href="#" className="post-link">
+                <p className="post-title">{post.title}</p>
                 <span className="post-category">[{post.category}]</span>
-              </div>
-            </div>
-            <div className="post-right">
-              <div className="post-stats-group">
-                <span className="stat">
-                  <img src="/images/new_main/icon_coment.png" alt="댓글" className="stat-icon" />
-                  {post.comments}
+                <span className="post-stat-icon">
+                  <img src="//cdn2.ppomppu.co.kr/images/new_main/icon_coment.png" alt="댓글" />
                 </span>
-                <span className="stat like">
-                  <img src="//cdn2.ppomppu.co.kr/images/m_icon_like_blue_new.png" alt="추천" className="stat-icon" />
-                  {post.likes}
+                <span className="post-stat-value">{post.comments}</span>
+                <span className="post-stat-icon like-icon">
+                  <img src="//cdn2.ppomppu.co.kr/images/m_icon_like_blue_new.png" alt="추천" />
                 </span>
-              </div>
-              <span className="post-time">{post.timestamp}</span>
-            </div>
-          </article>
-        ))}
+                <span className="post-stat-value like-value">{post.likes}</span>
+                <span className="post-time">{post.timestamp}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </main>
 
       {/* 하단 버튼 */}

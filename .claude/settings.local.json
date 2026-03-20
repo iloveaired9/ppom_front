@@ -28,7 +28,8 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(ls -la src/components/StyleComparison*)",
-      "Bash(src/test-import.tsx:*)"
+      "Bash(src/test-import.tsx:*)",
+      "Bash(git tag:*)"
     ]
   }
 }
