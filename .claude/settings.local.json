@@ -29,7 +29,9 @@
       "Bash(git push:*)",
       "Bash(ls -la src/components/StyleComparison*)",
       "Bash(src/test-import.tsx:*)",
-      "Bash(git tag:*)"
+      "Bash(git tag:*)",
+      "Bash(curl -L \"https://cdn2.ppomppu.co.kr/images/new_main/icon_coment.png\" -o icon_coment.png)",
+      "Bash(curl -L \"https://cdn2.ppomppu.co.kr/images/m_icon_like_blue_new.png\" -o icon_like_blue.png)"
     ]
   }
 }
