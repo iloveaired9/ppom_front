@@ -174,11 +174,11 @@ export const PpompuNew: React.FC = () => {
                 <span className="post-title">{post.title}</span>
                 <span className="post-category">[{post.category}]</span>
                 <span className="post-stat-icon">
-                  <img src="/images/icons/icon_coment.png" alt="댓글" />
+                  <img src="/images/new_main/icon_coment.png" alt="댓글" />
                 </span>
                 <span className="post-stat-value">{post.comments}</span>
                 <span className="post-stat-icon like-icon">
-                  <img src="/images/icons/icon_like_blue.png" alt="추천" />
+                  <img src="/images/new_main/icon_like_blue.png" alt="추천" />
                 </span>
                 <span className="post-stat-value like-value">{post.likes}</span>
                 <span className="post-time">{post.timestamp}</span>
