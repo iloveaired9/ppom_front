@@ -24,7 +24,11 @@
       "Bash(mv DARKMODE_COMPARISON.md docs/REFERENCE_DARKMODE_COMPARISON.md)",
       "Bash(mv PPOMPPU_DARKMODE_ANALYSIS.md docs/REFERENCE_ANALYSIS.md)",
       "Bash(ls -lh docs/REFERENCE*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(ls -la src/components/StyleComparison*)",
+      "Bash(src/test-import.tsx:*)"
     ]
   }
 }
