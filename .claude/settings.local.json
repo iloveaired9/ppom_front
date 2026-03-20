@@ -31,7 +31,9 @@
       "Bash(src/test-import.tsx:*)",
       "Bash(git tag:*)",
       "Bash(curl -L \"https://cdn2.ppomppu.co.kr/images/new_main/icon_coment.png\" -o icon_coment.png)",
-      "Bash(curl -L \"https://cdn2.ppomppu.co.kr/images/m_icon_like_blue_new.png\" -o icon_like_blue.png)"
+      "Bash(curl -L \"https://cdn2.ppomppu.co.kr/images/m_icon_like_blue_new.png\" -o icon_like_blue.png)",
+      "Bash(curl -L \"https://m.ppomppu.co.kr/images/new_main/icon_coment.png\" -o public/images/new_main/icon_coment.png)",
+      "Bash(curl -L \"https://m.ppomppu.co.kr/images/m_icon_like_blue_new.png\" -o public/images/new_main/icon_like_blue.png)"
     ]
   }
 }
